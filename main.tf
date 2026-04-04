@@ -6,8 +6,8 @@ terraform {
       source  = "hashicorp/google"
       version = "~> 5.0"
     }
+  }
 }
-
 provider "google" {
     project = "github-action-testing"
     region  =  "us-central1"
