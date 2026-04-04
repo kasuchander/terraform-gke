@@ -34,6 +34,12 @@ resource "google_container_cluster" "primary" {
 
     node_config {
         machine_type = "e2-medium"
+        disk_size_gb = 50
+        disk_type = "pd-standard"
     }
 }
 
+variable "region" {
+   type  =  string
+   default =  "us-central1"
+}
